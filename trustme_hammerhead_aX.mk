@@ -24,18 +24,18 @@
 # Get the long list of APNs
 PRODUCT_COPY_FILES := device/lge/hammerhead/apns-full-conf.xml:system/etc/apns-conf.xml
 
-# Overwrite disabled functions with empty xml (needs to be done before anything else is included)
-PRODUCT_COPY_FILES += \
-    device/fraunhofer/trustme_generic/empty.xml:system/etc/permissions/android.hardware.usb.accessory.xml \
-    device/fraunhofer/trustme_generic/empty.xml:system/etc/permissions/android.hardware.usb.host.xml
-# Copy trustme specific handheld_core_hardware.xml (e.g., removed camera and bluetooth)
-PRODUCT_COPY_FILES += \
-    device/fraunhofer/trustme_generic/empty.xml:system/etc/permissions/handheld_core_hardware.xml \
-    device/fraunhofer/trustme_generic/trustme_generic_hardware.xml:system/etc/permissions/trustme_generic_hardware.xml
-# extracted features like bluetooth which can be cleaned by postprocessing in trustme-main.mk
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.bluetooth.xml:system/etc/permissions/android.hardware.bluetooth.xml \
-    frameworks/native/data/etc/android.software.print.xml:system/etc/permissions/android.software.print.xml
+## Overwrite disabled functions with empty xml (needs to be done before anything else is included)
+#PRODUCT_COPY_FILES += \
+#    device/fraunhofer/trustme_generic/empty.xml:system/etc/permissions/android.hardware.usb.accessory.xml \
+#    device/fraunhofer/trustme_generic/empty.xml:system/etc/permissions/android.hardware.usb.host.xml
+## Copy trustme specific handheld_core_hardware.xml (e.g., removed camera and bluetooth)
+#PRODUCT_COPY_FILES += \
+#    device/fraunhofer/trustme_generic/empty.xml:system/etc/permissions/handheld_core_hardware.xml \
+#    device/fraunhofer/trustme_generic/trustme_generic_hardware.xml:system/etc/permissions/trustme_generic_hardware.xml
+## extracted features like bluetooth which can be cleaned by postprocessing in trustme-main.mk
+#PRODUCT_COPY_FILES += \
+#    frameworks/native/data/etc/android.hardware.bluetooth.xml:system/etc/permissions/android.hardware.bluetooth.xml \
+#    frameworks/native/data/etc/android.software.print.xml:system/etc/permissions/android.software.print.xml
 
 # Copy audio config with disabled offload device (due to missing kernel namespace)
 PRODUCT_COPY_FILES += \
