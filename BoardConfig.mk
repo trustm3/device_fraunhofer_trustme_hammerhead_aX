@@ -40,15 +40,16 @@ TARGET_DEVICE := hammerhead
 TARGET_NO_BOOTLOADER := true
 TARGET_NO_KERNEL := true
 
-TARGET_USES_LOGD := false
+#TARGET_USES_LOGD := false
 
 #BOARD_SYSTEMIMAGE_PARTITION_SIZE :=  550000000
 #BOARD_USERDATAIMAGE_PARTITION_SIZE := 2000
 
 ## overwrite wlan device variable to activate wifi-hal stub library
 #BOARD_WLAN_DEVICE := none
-## do not build hw dependent wpa_supplicant libs (we have our proxy instead)
-#BOARD_WPA_SUPPLICANT_DRIVER :=
-#BOARD_WPA_SUPPLICANT_PRIVATE_LIB :=
-#BOARD_HOSTAPD_DRIVER :=
-#BOARD_HOSTAPD_PRIVATE_LIB :=
+
+# do not build hw dependent wpa_supplicant libs (we have our proxy instead)
+BOARD_WPA_SUPPLICANT_DRIVER :=
+BOARD_WPA_SUPPLICANT_PRIVATE_LIB :=
+BOARD_HOSTAPD_DRIVER :=
+BOARD_HOSTAPD_PRIVATE_LIB :=

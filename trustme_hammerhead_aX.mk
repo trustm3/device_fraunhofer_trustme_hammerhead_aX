@@ -73,8 +73,7 @@ PRODUCT_MODEL := hammerhead
 OUT_DIR := out-aosp
 
 PRODUCT_COPY_FILES += \
-    device/fraunhofer/trustme_hammerhead_aX/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
-    external/dhcpcd/android.conf:system/etc/dhcpcd/dhcpcd.conf
+    device/fraunhofer/trustme_hammerhead_aX/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf
 
 # include binary blobs
 $(call inherit-product-if-exists, vendor/lge/hammerhead/device-vendor.mk)
