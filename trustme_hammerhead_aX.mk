@@ -43,7 +43,7 @@ PRODUCT_COPY_FILES += \
     device/fraunhofer/trustme_hammerhead_aX/mixer_paths.xml:system/etc/mixer_paths.xml
 
 # Inherit from those products. Most specific first.
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
 # overlay needs to be defined before generic or hardware include/inherit to take precedence
 DEVICE_PACKAGE_OVERLAYS += device/fraunhofer/trustme_hammerhead_aX/overlay
