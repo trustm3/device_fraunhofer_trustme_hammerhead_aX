@@ -24,6 +24,7 @@
 # Get the long list of APNs
 PRODUCT_COPY_FILES := device/lge/hammerhead/apns-full-conf.xml:system/etc/apns-conf.xml
 
+
 ## Overwrite disabled functions with empty xml (needs to be done before anything else is included)
 #PRODUCT_COPY_FILES += \
 #    device/fraunhofer/trustme_generic/empty.xml:system/etc/permissions/android.hardware.usb.accessory.xml \
@@ -72,8 +73,8 @@ PRODUCT_MANUFACTURER := fraunhofer
 PRODUCT_MODEL := hammerhead
 OUT_DIR := out-aosp
 
-PRODUCT_COPY_FILES += \
-    device/fraunhofer/trustme_hammerhead_aX/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf
+#PRODUCT_COPY_FILES += \
+#    device/fraunhofer/trustme_hammerhead_aX/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf
 
 # include binary blobs
 $(call inherit-product-if-exists, vendor/lge/hammerhead/device-vendor.mk)

@@ -48,8 +48,8 @@ TARGET_NO_KERNEL := true
 ## overwrite wlan device variable to activate wifi-hal stub library
 #BOARD_WLAN_DEVICE := none
 
-# do not build hw dependent wpa_supplicant libs (we have our proxy instead)
-BOARD_WPA_SUPPLICANT_DRIVER :=
-BOARD_WPA_SUPPLICANT_PRIVATE_LIB :=
-BOARD_HOSTAPD_DRIVER :=
-BOARD_HOSTAPD_PRIVATE_LIB :=
+## do not build hw dependent wpa_supplicant libs (we have our proxy instead)
+#BOARD_WPA_SUPPLICANT_DRIVER :=
+#BOARD_WPA_SUPPLICANT_PRIVATE_LIB :=
+#BOARD_HOSTAPD_DRIVER :=
+#BOARD_HOSTAPD_PRIVATE_LIB :=
