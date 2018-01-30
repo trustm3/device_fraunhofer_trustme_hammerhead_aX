@@ -49,3 +49,7 @@ TARGET_NO_KERNEL := true
 #BOARD_WPA_SUPPLICANT_PRIVATE_LIB :=
 #BOARD_HOSTAPD_DRIVER :=
 #BOARD_HOSTAPD_PRIVATE_LIB :=
+
+# SELinux
+BOARD_SEPOLICY_DIRS += \
+       device/fraunhofer/trustme_hammerhead_cml/sepolicy
