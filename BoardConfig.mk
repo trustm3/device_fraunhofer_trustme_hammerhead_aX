@@ -27,10 +27,6 @@
 # inherit from hammerhead 
 -include device/lge/hammerhead/BoardConfig.mk
 
-## set target device to hammerhead instead of trustme_hammerhead
-## otherwise jf-common would not include necessary subdirs in its Android.mk 
-TARGET_DEVICE := hammerhead
-
 #ifeq (,$(filter userdebug eng,$(TARGET_BUILD_VARIANT)))
 ## disable real camara which does not work anyway
 #USE_CAMERA_STUB := true

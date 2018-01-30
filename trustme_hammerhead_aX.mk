@@ -68,9 +68,10 @@ include device/fraunhofer/trustme_generic/trustme_generic_aX.mk
 PRODUCT_NAME := trustme_hammerhead_aX
 PRODUCT_DEVICE := trustme_hammerhead_aX
 PRODUCT_BRAND := Android
-PRODUCT_MODEL := trust-me AndroidX for hammerhead
+PRODUCT_MODEL := trustme_hammerhead_aX
 PRODUCT_MANUFACTURER := fraunhofer
-PRODUCT_MODEL := hammerhead
+TRUSTME_HARDWARE := hammerhead
+
 OUT_DIR := out-aosp
 
 #PRODUCT_COPY_FILES += \
